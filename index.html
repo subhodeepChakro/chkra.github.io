@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="navbar" class="navbar">
+    <div class="logo" id="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 id="hero-logo">I'm Brand Name</h1>
+      <button id="scroll-button" class="scroll-button">See My Projects</button>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="project-grid">
+      <div class="project-box" data-color="#ff6347" onclick="openProject('project1.html', event)">Project 1</div>
+      <div class="project-box" data-color="#4682b4" onclick="openProject('project2.html', event)">Project 2</div>
+      <div class="project-box" data-color="#32cd32" onclick="openProject('project3.html', event)">Project 3</div>
+      <div class="project-box" data-color="#ffa500" onclick="openProject('project4.html', event)">Project 4</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
